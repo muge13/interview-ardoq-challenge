@@ -1,0 +1,121 @@
+{
+"stats": {
+  "cpu-1m": 80,
+  "cpu-5m": 60,
+  "mem-1m": 70,
+  "mem-5m": 60
+},
+"organzations":
+ [
+  {
+    "disposable": false,
+    "name": "testeroony",
+    "created": "2019-08-09T15:16:33.151Z",
+    "status": "in_trial",
+    "label": "testeroony",
+    "plan_id": "trial",
+    "members": 1,
+    "days-remaining-trial": 7
+  },
+  {
+    "disposable": false,
+    "name": "trialtest",
+    "created": "2019-09-23T15:00:34.790Z",
+    "status": "active",
+    "label": "trialtest",
+    "plan_id": "employee",
+    "members": 1,
+    "days-remaining-trial": null
+  },
+  {
+    "disposable": false,
+    "name": "ttttttttHACKED",
+    "created": "2019-07-24T19:22:45.991Z",
+    "status": "active",
+    "label": "tttttttthacked",
+    "plan_id": "premium",
+    "members": 1,
+    "days-remaining-trial": null
+  },
+  {
+    "disposable": true,
+    "name": "tttttttttttttttttesttttttttttttttttt",
+    "created": "2019-07-06T07:50:53.474Z",
+    "status": "non_renewing",
+    "label": "tttttttttttttttttesttttttttttt",
+    "plan_id": "trial",
+    "members": 1,
+    "days-remaining-trial": null
+  },
+  {
+    "disposable": false,
+    "name": "university college dublin",
+    "created": "2018-04-02T20:34:26.802Z",
+    "status": "active",
+    "label": "universitycollegedublin",
+    "plan_id": "basic",
+    "members": 1,
+    "days-remaining-trial": null
+  },
+  {
+    "disposable": false,
+    "name": "unknown",
+    "created": "2019-11-04T13:01:06.633Z",
+    "status": "in_trial",
+    "label": "unknown",
+    "plan_id": "trial",
+    "members": 1,
+    "days-remaining-trial": 20
+  },
+  {
+    "disposable": false,
+    "name": "ÅF Digital Solutions",
+    "created": "2019-06-24T12:48:31.256Z",
+    "status": "active",
+    "label": "afdigitalsolutions",
+    "plan_id": "partner-internal",
+    "members": 16,
+    "days-remaining-trial": null
+  },
+  {
+    "disposable": false,
+    "name": "Some customer",
+    "created": "2017-12-01T09:59:22.462Z",
+    "status": "active",
+    "label": "somecustomer",
+    "plan_id": "basic",
+    "members": 1,
+    "days-remaining-trial": null
+  },
+  {
+    "disposable": false,
+    "name": "天天平台全新改版-琎151880。c0M找客服首忡100宋38金~",
+    "created": "2019-10-25T11:26:09.884Z",
+    "status": "in_trial",
+    "label": "151880c0m10038",
+    "plan_id": "trial",
+    "members": 1,
+    "days-remaining-trial": 9
+  },
+  {
+    "disposable": false,
+    "name": "🔥",
+    "created": "2019-03-21T00:16:25.854Z",
+    "status": null,
+    "label": "ardoq07978",
+    "plan_id": "unknown",
+    "members": 3,
+    "days-remaining-trial": null
+  },
+  {
+    "disposable": false,
+    "name": "🤖",
+    "created": "2019-07-12T11:35:30.368Z",
+    "status": null,
+    "label": "ardoq65169",
+    "plan_id": "unknown",
+    "members": 1,
+    "days-remaining-trial": null
+  }
+]
+}

@@ -1,0 +1,38 @@
+- hosts: localhost
+  vars:
+    file_id: 1fQPNwD65XdbI3iu7ujCppxN7NWv9NUKL
+    slack_token: "{{ lookup('env','SLACK_API_TOKEN') }}"
+  tasks:
+    # - name: fetch file from google drive
+    - name: get from drive
+      get_url:
+        url: "https://drive.google.com/uc?export=download&id={{ file_id }}"
+        dest: ../data/test.json
+        mode: u=r,g-r,o=r
+    - name: set data file
+      set_fact:
+        data: "{{ lookup('file', '../data/test.json', convert_data=True)| regex_replace ('-','_')}}"
+    - name: get first_query
+      set_fact:
+        first: "{{ data | json_query(query)| join(' , ') }}"
+      vars:
+        query: "organzations[?plan_id==`trial`&&status==`in_trial`&&days_remaining_trial>`0`].name"
+    - name: run first filter
+      debug:
+        msg: "{{first}}"
+    - name: get second_query
+      set_fact:
+        second: "{{ data | json_query(query)| join(' , ') }}"
+      vars:
+        query: "organzations[?plan_id==`trial`||plan_id==`employee`].name"
+    - name: run second json filter
+      debug:
+        msg: "{{second}}"
+    - name: send slack message
+      slack:
+        token: "{{slack_token}}"
+        msg: 'Condition A: {{ first }}
+              Condition B: {{ second }}'
+        channel: '#interviews'
+        username: 'Ansible on {{ inventory_hostname }}'
+
